@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Sponsors | Inspire Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+        line-height: 1.6; /* Improved line spacing */
+      }
+      .logo-font,
+      .logo {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+      }
+      .official {
+        font-family: "pacifico", cursive !important;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.025em; /* Slightly tighter letter spacing */
+      }
+      p,
+      li,
+      .text-lg,
+      .text-xl {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        letter-spacing: -0.01em; /* Improved readability for paragraphs */
+      }
+      .card {
+        background: rgba(15, 15, 15, 0.9);
+        border: 1px solid #333;
+        transition: all 0.3s ease;
+      }
+      .card:hover {
+        border-color: #555;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .section-divider {
+        position: relative;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #888, transparent);
+        max-width: 800px;
+        margin: 3rem auto;
+      }
+      .btn {
+        background: #fff;
+        color: #000;
+        border: 1px solid #fff;
+        transition: all 0.3s ease;
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+      }
+      .btn:hover {
+        background: #000;
+        color: #fff;
+        transform: translateY(-3px);
+      }
+      .sponsor-logo {
+        height: 120px;
+        border-radius: 1rem;
+        background: linear-gradient(135deg, #111 0%, #222 100%);
+        border: 1px solid #333;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 3rem;
+      }
+      .icon-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: rgba(30, 30, 30, 0.9);
+        border: 1px solid #333;
+        margin-right: 12px;
+      }
+      .newsletter-input {
+        background: rgba(15, 15, 15, 0.9);
+        border: 1px solid #333;
+        color: #fff;
+      }
+      .newsletter-input:focus {
+        outline: none;
+        border-color: #888;
+      }
+      .newsletter-btn {
+        background: #fff;
+        color: #000;
+        border: 1px solid #fff;
+      }
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(15, 15, 15, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #333;
+        transition: all 0.3s ease;
+      }
+      .social-icon:hover {
+        background: #fff;
+        color: #000;
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <nav
+      class="w-full py-4 px-6 flex justify-between items-center bg-black sticky top-0 z-50 border-b border-gray-800"
+    >
+      <div class="flex items-center">
+        <a href="index.html" class="text-2xl logo official"
+          ><span>Inspire</span> Club</a
+        >
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a
+          href="index.html#purpose"
+          class="font-medium hover:text-gray-300 transition flex items-center"
+        >
+          <div class="icon-container">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          Purpose
+        </a>
+        <a
+          href="index.html#features"
+          class="font-medium hover:text-gray-300 transition flex items-center"
+        >
+          <div class="icon-container">
+            <i class="fas fa-cogs"></i>
+          </div>
+          Features
+        </a>
+        <a
+          href="index.html#vision"
+          class="font-medium hover:text-gray-300 transition flex items-center"
+        >
+          <div class="icon-container">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          Vision
+        </a>
+        <a
+          href="index.html#projects"
+          class="font-medium hover:text-gray-300 transition flex items-center"
+        >
+          <div class="icon-container">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          Projects
+        </a>
+        <a
+          href="sponsors.html"
+          class="font-medium hover:text-gray-300 transition flex items-center"
+        >
+          <div class="icon-container">
+            <i class="fas fa-handshake"></i>
+          </div>
+          Sponsors
+        </a>
+      </div>
+      <a
+        href="index.html#join"
+        class="btn px-6 py-2 rounded-full font-semibold flex items-center"
+      >
+        <i class="fas fa-user-plus mr-2"></i> Join Now
+      </a>
+    </nav>
+
+    <main>
+      <section class="text-center px-6 py-20 md:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="inline-block bg-gray-900 text-gray-300 px-4 py-1 rounded-full text-sm font-medium mb-6"
+          >
+            <i class="fas fa-handshake mr-2"></i> Our Partners
+          </div>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl mb-6 logo-font">
+            Fueling Student Innovation
+          </h1>
+          <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+            We are incredibly grateful for the support of our sponsors. Their
+            generosity provides the tools, resources, and opportunities our
+            students need to turn their ambitious ideas into reality.
+          </p>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section id="sponsors-list" class="py-16 px-6 bg-black">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-16">
+            <h2
+              class="text-3xl font-bold text-center mb-4 logo-font text-yellow-300"
+            >
+              Platinum Tier
+            </h2>
+            <p class="text-gray-500 text-center max-w-2xl mx-auto mb-10">
+              Our leading partners dedicated to empowering the next generation
+              of innovators.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="card rounded-2xl p-8 text-center">
+                <div class="sponsor-logo">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <h4 class="text-2xl mb-3 logo-font">RoyalWart</h4>
+                <p class="text-gray-400">
+                  Managing our organisation's function and providing
+                  administrative support to ensure smooth operations.
+                </p>
+              </div>
+              <div class="card rounded-2xl p-8 text-center">
+                <div class="sponsor-logo">
+                  <i class="fas fa-school"></i>
+                </div>
+                <h4 class="text-2xl mb-3 logo-font">Jayakeralam Innovators</h4>
+                <p class="text-gray-400">
+                  For providing advices and support on every stages of our projects.
+                </p>
+              </div>
+              <div class="card rounded-2xl p-8 text-center">
+                <div class="sponsor-logo">
+                  <i class="fa-brands fa-discord"></i>
+                </div>
+                <h4 class="text-xl mb-3 logo-font">Discord</h4>
+                <p class="text-gray-400">
+                  Providing our community with a platform for collaboration and
+                  communication.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-16">
+            <h2
+              class="text-3xl font-bold text-center mb-4 logo-font text-gray-300"
+            >
+              Gold Tier
+            </h2>
+            <p class="text-gray-500 text-center max-w-2xl mx-auto mb-10">
+              Key supporters who provide vital resources and mentorship for our
+              community.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- <div class="card rounded-2xl p-8 text-center">
+                <div class="sponsor-logo">
+                  <i class="fa-brands fa-discord"></i>
+                </div>
+                <h4 class="text-xl mb-3 logo-font">Discord</h4>
+                <p class="text-gray-400">
+                  Providing our community with a platform for collaboration and
+                  communication.
+                </p>
+              </div> -->
+              <!-- <div class="card rounded-2xl p-8 text-center">
+                <div class="sponsor-logo">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h4 class="text-xl mb-3 logo-font">Creative Minds Co.</h4>
+                <p class="text-gray-400">
+                  Offering workshops on design thinking and product management.
+                </p>
+              </div>
+              <div class="card rounded-2xl p-8 text-center">
+                <div class="sponsor-logo">
+                  <i class="fas fa-book-open"></i>
+                </div>
+                <h4 class="text-xl mb-3 logo-font">EduGrowth Foundation</h4>
+                <p class="text-gray-400">
+                  Supporting our mentorship program and educational resources.
+                </p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="join"
+        class="py-20 px-6 relative overflow-hidden border-t border-b border-gray-800"
+      >
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+          <div
+            class="w-24 h-24 rounded-full bg-black mx-auto flex items-center justify-center mb-8 border-2 border-white"
+          >
+            <i class="fas fa-hands-helping text-white text-4xl"></i>
+          </div>
+          <h2 class="text-3xl md:text-4xl mb-6 logo-font">Become a Sponsor</h2>
+          <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+            Interested in supporting the next wave of creators and leaders? Join
+            us in our mission to empower student innovation across the globe.
+          </p>
+          <a
+            href="#"
+            class="btn px-8 py-4 rounded-full text-lg font-semibold inline-block mb-6 logo-font"
+          >
+            <i class="fas fa-envelope mr-2"></i> Contact Us
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-12 px-6 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <h3 class="text-xl logo">Inspire Club</h3>
+            </div>
+            <p class="text-gray-500 text-sm">
+              Empowering student innovation through collaboration, resources,
+              and mentorship.
+            </p>
+            <div class="mt-4 text-xs text-gray-600">
+              <i class="fas fa-flask mr-1"></i> Currently in Alpha Development
+              Stage
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-gray-300 logo-font">
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html#purpose"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-arrow-right mr-2"></i> Our Purpose
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#features"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-arrow-right mr-2"></i> Features
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#vision"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-arrow-right mr-2"></i> Growth Plan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#projects"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-arrow-right mr-2"></i> Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-gray-300 logo-font">
+              Resources
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-book mr-2"></i> Project Guides
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-user-graduate mr-2"></i> Mentorship Program
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-donate mr-2"></i> Funding Opportunities
+                </a>
+              </li>
+              <li>
+                <a
+                  href="sponsors.html"
+                  class="text-gray-500 hover:text-gray-300 transition flex items-center"
+                >
+                  <i class="fas fa-handshake mr-2"></i> Our Sponsors
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-gray-300 logo-font">
+              Connect With Us
+            </h4>
+            <div class="flex space-x-4 mb-4">
+              <a href="#" class="social-icon">
+                <i class="fab fa-discord"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <p class="text-gray-500 text-sm">
+              <i class="fas fa-envelope mr-2"></i> Subscribe to our newsletter
+              for updates
+            </p>
+            <div class="mt-2 flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="newsletter-input rounded-l-lg px-4 py-3 w-full"
+              />
+              <button class="newsletter-btn px-4 rounded-r-lg">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm"
+        >
+          <p>
+            © 2025 Inspire Club. Built with
+            <i class="fas fa-heart text-gray-400 mx-1"></i> by students, for
+            students.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
