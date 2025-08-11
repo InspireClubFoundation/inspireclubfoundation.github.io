@@ -799,20 +799,18 @@
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
-            <p class="text-gray-500 text-sm">
-              <i class="fas fa-envelope mr-2"></i> Subscribe to our newsletter
-              for updates
-            </p>
-            <div class="mt-2 flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                class="newsletter-input rounded-l-lg px-4 py-3 w-full"
-              />
-              <button class="newsletter-btn px-4 rounded-r-lg">
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </div>
+           <!-- footer: newsletter form -->
+<form id="newsletter-form" class="mt-2 flex" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+  <input id="newsletter-email" name="email" type="email" required
+         placeholder="Your email"
+         class="newsletter-input rounded-l-lg px-4 py-3 w-full"
+         aria-label="Email address"/>
+  <button id="newsletter-btn" type="submit" class="newsletter-btn px-4 rounded-r-lg">
+    <i class="fas fa-paper-plane"></i>
+  </button>
+</form>
+<div id="newsletter-msg" class="mt-2 text-sm" role="status" aria-live="polite"></div>
+
           </div>
         </div>
 
@@ -827,5 +825,33 @@
         </div>
       </div>
     </footer>
+    <script>
+const form = document.getElementById('newsletter-form');
+const msg = document.getElementById('newsletter-msg');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('newsletter-btn');
+  const email = document.getElementById('newsletter-email').value.trim();
+  if (!/^\S+@\S+\.\S+$/.test(email)) { msg.textContent = 'Enter a valid email.'; return; }
+  btn.disabled = true; msg.textContent = 'Submitting…';
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    });
+    if (res.ok) {
+      msg.textContent = 'Thanks — check your inbox to confirm (if double opt-in enabled).';
+      form.reset();
+    } else {
+      const data = await res.json().catch(()=>null);
+      msg.textContent = data?.error || 'Submission failed. Try again later.';
+    }
+  } catch (err) {
+    msg.textContent = 'Network error. Try again.';
+  } finally { btn.disabled = false; }
+});
+</script>
   </body>
+
 </html>
